@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Tilt Neon";
+  src: url(medias/TiltNeon-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 13vh;
+  background: url(medias/diceGame_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #FEFCCE;
+  font-family: "Tilt Neon";
+  letter-spacing: 1vw;
+  text-align: center;
+}
+
+.main {
+  height: 81vh;
+  background: #FEFCCE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.main__blocPlayer {
+  width: 200px;
+  height: 320px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+.main__blocPlayer__title {
+  font-size: 30px;
+  font-family: "Tilt Neon";
+}
+.main__blocPlayer__score {
+  font-size: 45px;
+  font-family: "Tilt Neon";
+  color: #FF2C2C;
+}
+.main__blocPlayer__btn {
+  width: 70px;
+  height: 25px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background-color: #FF2C2C;
+  color: black;
+  font-family: "Tilt Neon";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color, color, transform 0.5s ease;
+  font-size: 15px;
+}
+.main__blocPlayer__btn:hover {
+  background-color: black;
+  color: #FF2C2C;
+  transform: scale(1.1);
+}
+.main__winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.082));
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.356);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+.main__winner__text {
+  font-family: "Tilt Neon";
+  font-size: 22px;
+  color: #FF2C2C;
+}
+.main__winner__btn {
+  width: 70px;
+  height: 25px;
+  background-color: #FF2C2C;
+  color: black;
+  font-family: "Tilt Neon";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color, color, transform 0.5s ease;
+  font-size: 15px;
+}
+.main__winner__btn:hover {
+  background-color: black;
+  color: #FF2C2C;
+  transform: scale(1.1);
+}
+.main__dice__img {
+  height: 60px;
+}
+
+.footer {
+  background-color: #FEFCCE;
+  color: #FF2C2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+  font-family: "Tilt Neon";
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    overflow: hidden;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main__blocPlayer1 {
+    transform: rotate(180deg);
+  }
+  .main__blocPlayer {
+    height: 200px;
+  }
+}
+@keyframes Rolle {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

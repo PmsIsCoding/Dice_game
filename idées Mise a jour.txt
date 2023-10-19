@@ -1,0 +1,9 @@
+Possibilité d'augmenter le nombre de joueur jusqu'a 4 ou pttr plus
+
+Utilisation d'une autre solution pour un meilleur random
+
+Possibilité de choisir un nom...
+
+Page d'accueil ou on configure avant de jouer
+
+Choisir le nombre max a atteindre pour gagner

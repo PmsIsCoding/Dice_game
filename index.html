@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="medias/dice.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Dice Game</h1>
+    </header>
+
+    <main class="main">
+        <div class="main__blocPlayer  main__blocPlayer1">
+            <h2 class="main__blocPlayer__title">Player 1</h2>
+            <p class="main__blocPlayer__score main__blocPlayer__score1">0</p>
+            <button class="main__blocPlayer__btn main__blocPlayer__btn1">Lancer</button>
+        </div>
+        <div class="main__dice">
+            <img src="medias/face1.png" alt="Dice Image" class="main__dice__img">
+        </div>
+        <div class="main__blocPlayer">
+            <h2 class="main__blocPlayer__title">Player 2</h2>
+            <p class="main__blocPlayer__score main__blocPlayer__score2">0</p>
+            <button class="main__blocPlayer__btn main__blocPlayer__btn2">Lancer</button>
+        </div>
+        <div class="main__winner">
+            <p class="main__winner__text">Player 1 a gagné</p>
+            <button class="main__winner__btn">Rejouer</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__signature">By PMS & Albar</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
